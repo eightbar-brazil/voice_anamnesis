@@ -1,4 +1,4 @@
-# class1
+# VueJS Voice Recognition
 
 ## Project setup
 ```
