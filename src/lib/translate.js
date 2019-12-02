@@ -6,7 +6,7 @@ export default class Translator {
     this.languageTranslator = new LanguageTranslatorV3({
       version: '2019-10-28',
       authenticator: new IamAuthenticator({
-        apikey: '5FaLDIG9QblgaBmHjAa7k7uzuv_jgNsJ-9gXFWb9mpid',
+        apikey: '<<ENTER API KEY>>',
       }),
       url: 'https://gateway.watsonplatform.net/language-translator/api',
     });

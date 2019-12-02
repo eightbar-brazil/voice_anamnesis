@@ -6,7 +6,7 @@ export default class Clinical{
         this.naturalLanguageUnderstanding = new NaturalLanguageUnderstandingV1({
             version: '2019-11-22',
             authenticator: new IamAuthenticator({
-              apikey: 'rjV9nHGxqgy2R0u0jNTvnDgzccd-Koz3mv9GztGdzUDH',
+              apikey: '<<ENTER API KEY>>',
             }),
             url: 'https://gateway.watsonplatform.net/natural-language-understanding/api',
         });
