@@ -8,6 +8,8 @@ export default class SpeechToText {
         this.result = 'created';
         this.resultSubject = new Subject();
 
+        this.recognition.continuous = true;
+
         this.recognition.lang = 'pt-BR';
         this.recognition.interimResults = false;
         this.recognition.maxAlternatives = 1;
@@ -30,11 +32,15 @@ export default class SpeechToText {
 
         this.recognition.onerror = (event) => {
             this.resultSubject.error(`Error occurred in recognition: ${event.error}`);
-        };
+        };        
     }
 
     speak() {
         this.recognition.start();
         return this.resultSubject;
+    }
+
+    stop(){
+        this.recognition.stop();
     }
 }
